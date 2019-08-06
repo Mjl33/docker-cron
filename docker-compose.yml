@@ -12,5 +12,5 @@ services:
       - ./crontab:/etc/crontab
       - ./scripts:/opt/scripts
     environment:
-      MINUTES: "1"
+      DAYS: "5"
 

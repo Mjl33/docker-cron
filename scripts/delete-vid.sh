@@ -1,3 +1,3 @@
 #!/bin/sh
-find /tmp -name "*.mp4" -type f -mmin +${MINUTES} | xargs --no-run-if-empty rm
+find /tmp -name "*.mp4" -type f -mtime +${DAYS} | xargs --no-run-if-empty rm
 
