@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+
+# Intellij
+*.iml
+*.idea
+
+# VsCode
+.vscode
+.classpath
+.factorypath
+.project
+.settings
+
+# Vim swap files
+*.un~
+*~

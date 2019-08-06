@@ -1,0 +1,16 @@
+version: '2'
+services:
+  cron:
+    build:
+      context: .
+      args:
+        http_proxy: ${HTTP_PROXY}
+        https_proxy: ${HTTP_PROXY}
+    container_name: cron
+    volumes:
+      - /opt/selenoid/video/:/tmp/
+      - ./crontab:/etc/crontab
+      - ./scripts:/opt/scripts
+    environment:
+      MINUTES: "1"
+
